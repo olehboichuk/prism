@@ -1,0 +1,21 @@
+<div class="cont mat-elevation-z8">
+  <div class="can">
+    <canvas baseChart class="canvas"
+            [data]="doughnutChartData"
+            [labels]="doughnutChartLabels"
+            [chartType]="doughnutChartType"
+            [colors]="doughnutChartColors"
+            [legend]="false"
+            [options]="options"></canvas>
+  </div>
+  <span class="line"></span>
+  <div class="checkboxes">
+    <div class="checkbox" *ngFor="let item of doughnutChartLabels; let i = index;">
+      <label class="container">{{item}}
+        <input type="checkbox" (change)="onChanged(item)" checked>
+        <span class="checkmark"></span>
+        <span class="oval" style="border: 4px solid {{doughnutChartColors[0].backgroundColor[i]}};"></span>
+      </label>
+    </div>
+  </div>
+</div>

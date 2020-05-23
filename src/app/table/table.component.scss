@@ -1,0 +1,36 @@
+.header {
+  padding: 10px 0 10px 65px;
+  margin: 0;
+  background: #daf3fa;
+  font-weight: bolder;
+}
+
+
+main {
+  height: 50vh;
+  overflow: auto;
+
+  &::-webkit-scrollbar {
+    width: 8px;
+    background-color: rgba(0, 0, 0, 0);
+    -webkit-border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar:hover {
+    background-color: rgba(0, 0, 0, 0.09);
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.5);
+    -webkit-border-radius: 100px;
+  }
+
+  &::-webkit-scrollbar-thumb:active {
+    background: rgba(0, 0, 0, 0.61);
+    -webkit-border-radius: 100px;
+  }
+}
+
+.table {
+  width: 100%;
+}
